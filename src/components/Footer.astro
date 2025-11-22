@@ -1,0 +1,97 @@
+---
+const socialLinks = ['Twitter', 'Dribbble', 'Youtube'];
+---
+
+<footer class="w-full">
+  <!-- CTA Section -->
+  <div class="bg-[#F5F7FA] py-8 px-4 md:px-0">
+    <div class="max-w-[1440px] mx-auto flex flex-col items-center gap-8">
+      <h2 class="text-3xl md:text-[64px] font-semibold text-[#263238] text-center leading-[76px] max-w-[887px]">
+        Pellentesque suscipit fringilla libero eu.
+      </h2>
+      <a href="#" class="bg-[#4CAF4F] text-white px-8 py-[14px] rounded text-base font-medium flex items-center gap-2 hover:bg-[#388E3B] transition-colors">
+        Get a Demo
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="bg-[#263238] py-12 md:py-16 px-4 md:px-[165px]">
+    <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row gap-8 md:gap-[125px]">
+      <!-- Company Info -->
+      <div class="flex flex-col gap-10">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <div class="w-[43px] h-[30px] bg-[#4CAF4F] rounded"></div>
+          <div class="h-[26px] w-[138px] bg-[#4CAF4F] rounded"></div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="flex flex-col gap-2 text-sm text-[#F5F7FA]">
+          <p>Copyright © 2020 Nexcent ltd.</p>
+          <p>All rights reserved</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex gap-4">
+          {socialLinks.map((social) => (
+            <a href="#" class="w-8 h-8 bg-[#F5F7FA] rounded flex items-center justify-center hover:bg-[#4CAF4F] transition-colors">
+              <span class="sr-only">{social}</span>
+              <svg class="w-5 h-5 text-[#263238]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+              </svg>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="flex flex-col md:flex-row gap-8 md:gap-[30px] flex-1">
+        <!-- Company -->
+        <div class="flex flex-col gap-6">
+          <h3 class="text-xl font-semibold text-white">Company</h3>
+          <div class="flex flex-col gap-3 text-sm text-[#F5F7FA]">
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">About us</a>
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Blog</a>
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Contact us</a>
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Pricing</a>
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Testimonials</a>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div class="flex flex-col gap-6">
+          <h3 class="text-xl font-semibold text-white">Support</h3>
+          <div class="flex flex-col gap-3 text-sm text-[#F5F7FA]">
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Help center</a>
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Terms of service</a>
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Legal</a>
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Privacy policy</a>
+            <a href="#" class="hover:text-[#4CAF4F] transition-colors">Status</a>
+          </div>
+        </div>
+
+        <!-- Stay up to date -->
+        <div class="flex flex-col gap-6">
+          <h3 class="text-xl font-semibold text-white">Stay up to date</h3>
+          <div class="relative">
+            <input 
+              type="email" 
+              placeholder="Your email address" 
+              class="w-full md:w-[255px] h-10 px-3 pr-10 bg-white/20 rounded-lg text-sm text-[#D9DBE1] placeholder:text-[#D9DBE1] focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]"
+            />
+            <button class="absolute right-3 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-[#F5F7FA] hover:text-[#4CAF4F] transition-colors">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+

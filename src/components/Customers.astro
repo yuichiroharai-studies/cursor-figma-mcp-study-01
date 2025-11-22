@@ -1,0 +1,56 @@
+---
+const logos = [1, 2, 3, 4, 5, 6];
+---
+
+<section class="bg-[#F5F7FA] py-12 md:py-8 px-4 md:px-[144px]">
+  <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-[78px]">
+    <!-- Customer Image -->
+    <div class="w-full md:w-[326px] h-[326px] flex-shrink-0 rounded-lg shadow-[0px_8px_16px_0px_rgba(171,190,209,0.4)] overflow-hidden">
+      <img 
+        src="https://placehold.co/326x326" 
+        alt="Customer testimonial" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="flex-1 flex flex-col gap-8">
+      <!-- Testimonial -->
+      <div class="flex flex-col gap-4">
+        <p class="text-base text-[#717171] leading-6">
+          "We have enjoyed working with the JustGo system to setup and go live with our new membership platform. The initial effort to organise it along the lines of how our sport currently works was quick and relatively easy. The new system has already massively improved the time and effort it takes to setup and process member and club applications. It will help us to communicate with people in our sport in a much more effective way, and collect data to help us improve how our sport is governed."
+        </p>
+        <div class="flex flex-col gap-2">
+          <p class="text-xl font-semibold text-[#4CAF4F] leading-[28px]">
+            Tim Smith
+          </p>
+          <p class="text-base text-[#89939E]">
+            British Dragon Boat Racing Association
+          </p>
+        </div>
+      </div>
+
+      <!-- Client Logos and Link -->
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-8">
+        <div class="flex flex-wrap items-center gap-4 md:gap-[41px]">
+          {logos.map((i) => (
+            <div class={`w-12 h-12 rounded-lg flex items-center justify-center ${i === 1 ? 'bg-[#E8F5E9]' : 'bg-[#F5F7FA]'}`}>
+              <img 
+                src={`https://placehold.co/40x40?text=Logo${i}`}
+                alt={`Client logo ${i}`}
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+          ))}
+        </div>
+        <a href="#" class="flex items-center gap-2 text-xl font-semibold text-[#4CAF4F] hover:underline">
+          Meet all customers
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+

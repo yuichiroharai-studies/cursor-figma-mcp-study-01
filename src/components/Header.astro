@@ -1,0 +1,68 @@
+---
+---
+
+<header class="bg-[#F5F7FA] relative w-full h-[84px]">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-[144px] h-full flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <div class="w-[35px] h-[24px] bg-[#4CAF4F] rounded"></div>
+      <div class="h-[20.662px] w-[111.49px] bg-[#4CAF4F] rounded"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="hidden md:flex items-center gap-[50px]">
+      <a href="#" class="text-[#18191F] text-base font-medium hover:text-[#4CAF4F] transition-colors">Home</a>
+      <a href="#" class="text-[#18191F] text-base font-normal hover:text-[#4CAF4F] transition-colors">Service</a>
+      <a href="#" class="text-[#18191F] text-base font-normal hover:text-[#4CAF4F] transition-colors">Feature</a>
+      <a href="#" class="text-[#18191F] text-base font-normal hover:text-[#4CAF4F] transition-colors">Product</a>
+      <a href="#" class="text-[#18191F] text-base font-normal hover:text-[#4CAF4F] transition-colors">Testimonial</a>
+      <a href="#" class="text-[#18191F] text-base font-normal hover:text-[#4CAF4F] transition-colors">FAQ</a>
+    </nav>
+
+    <!-- Login Buttons -->
+    <div class="flex items-center gap-[14px]">
+      <button class="hidden md:block bg-[#F5F7FA] px-5 py-[10px] rounded-md text-[#4CAF4F] text-sm font-medium hover:bg-[#E8F5E9] transition-colors">
+        Login
+      </button>
+      <button class="bg-[#4CAF4F] px-5 py-[10px] rounded-md text-white text-sm font-medium hover:bg-[#388E3B] transition-colors">
+        Sign up
+      </button>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-50">
+    <nav class="flex flex-col p-4">
+      <a href="#" class="text-[#18191F] text-base font-medium py-3 border-b hover:text-[#4CAF4F] transition-colors">Home</a>
+      <a href="#" class="text-[#18191F] text-base font-normal py-3 border-b hover:text-[#4CAF4F] transition-colors">Service</a>
+      <a href="#" class="text-[#18191F] text-base font-normal py-3 border-b hover:text-[#4CAF4F] transition-colors">Feature</a>
+      <a href="#" class="text-[#18191F] text-base font-normal py-3 border-b hover:text-[#4CAF4F] transition-colors">Product</a>
+      <a href="#" class="text-[#18191F] text-base font-normal py-3 border-b hover:text-[#4CAF4F] transition-colors">Testimonial</a>
+      <a href="#" class="text-[#18191F] text-base font-normal py-3 border-b hover:text-[#4CAF4F] transition-colors">FAQ</a>
+      <button class="mt-4 bg-[#4CAF4F] px-5 py-[10px] rounded-md text-white text-sm font-medium w-full">
+        Login
+      </button>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>
+
+

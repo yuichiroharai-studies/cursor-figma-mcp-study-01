@@ -1,1 +1,23 @@
+/* Interフォントのインポート */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 @import "tailwindcss";
+
+/* カスタムプロパティ（デザイントークン） */
+:root {
+  --color-primary: #4caf4f;
+  --color-d-grey: #4d4d4d;
+  --color-grey: #717171;
+  --color-silver: #f5f7fa;
+  --color-black: #263238;
+  --color-white: #ffffff;
+  --color-l-grey: #89939e;
+  --color-gray-900: #18191f;
+  --color-gray-300: #d9dbe1;
+}
+
+/* ベーススタイル */
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-d-grey);
+}
